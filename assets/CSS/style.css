@@ -1,0 +1,19 @@
+/* Reposiciona o container de conteúdo para se ajustar a navbar fixa */
+
+main>.container {
+    padding: 60px 15px 0;
+}
+
+
+/* Define em 80% o tamanho da fonte de códigos*/
+
+code {
+    font-size: 80%;
+}
+
+
+/* Justifica todos os textos das linhas das tabelas */
+
+td {
+    text-align: justify;
+}
