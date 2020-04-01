@@ -47,4 +47,18 @@ $(document).ready(function() {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
     });
+
+    $("#myInput8").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable8 tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+
+    $("#myInput9").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable9 tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
 });
