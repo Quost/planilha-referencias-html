@@ -61,4 +61,11 @@ $(document).ready(function() {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
     });
+
+    $("#myInput10").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable10 tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
 });

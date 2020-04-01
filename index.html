@@ -47,6 +47,7 @@
                             <a class="dropdown-item" href="#11">Elementos interativos</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#12">Seletores CSS</a>
+                            <a class="dropdown-item" href="#13">Propriedades CSS</a>
                         </div>
                     </li>
                 </ul>
@@ -417,14 +418,14 @@
                             <tr>
                                 <th scope="row">2</th>
                                 <td><code>&lt;abbr&gt;</code></td>
-                                <td>epresenta uma abreviação e opcionalmente fornece uma descrição completa para ela. Se presente, o atributo <code>title</code> deve conter a descrição completa e apenas ela.
+                                <td>Representa uma abreviação e opcionalmente fornece uma descrição completa para ela. Se presente, o atributo <code>title</code> deve conter a descrição completa e apenas ela.
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
                                 <td><code>&lt;b&gt;</code></td>
-                                <td>epresenta um intervalo de texto estilísticamente diferente do texto normal, sem transmitir qualquer importância ou relevância. Ele é geralmente usado para destacar palavras-chaves em um resumo, nomes de produtos em um comentário
-                                    ou outros vãos de texto cuja a apresentação típica seria negrito. Outro exemplo de seu uso é como marcação da frase principal de cada paragrafo de um artigo.
+                                <td>Representa um intervalo de texto estilísticamente diferente do texto normal, sem transmitir qualquer importância ou relevância. Ele é geralmente usado para destacar palavras-chaves em um resumo, nomes de produtos em um
+                                    comentário ou outros vãos de texto cuja a apresentação típica seria negrito. Outro exemplo de seu uso é como marcação da frase principal de cada paragrafo de um artigo.
                                 </td>
                             </tr>
                             <tr>
@@ -1480,6 +1481,182 @@
                                 <td><code>:visited</code></td>
                                 <td><code>a:visited</code></td>
                                 <td>Seleciona todos links já visitados</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <br id="13">
+                    <hr>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-8 col-md-12 order-md-2">
+                    <h3 align="center">Propriedades CSS</h3><br />
+
+                    <p align="justify">&emsp;&emsp;CSS: Folha de estilo em cascata. É um mecanismo simples para adicionar estilos (por exemplo: fontes, cores, espaçamentos, etc) aos documentos web. Segue um resumo com as principais propriedades de estilo da linguagem CSS.</p>
+
+                    <p>Digite algo no campo a seguir para procurar na tabela por propriedades, exemplos ou descrições:</p>
+                    <input id="myInput10" type="text" placeholder="Procurar..">
+                    <br><br>
+
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Seletor</th>
+                                <th scope="col">Exemplo</th>
+                                <th scope="col">Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody id="myTable10">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td><code>font-family</code></td>
+                                <td><code>font-family: Arial;</code></td>
+                                <td>Define a família da fonte utilizada.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td><code>font-style</code></td>
+                                <td><code>font-style: italic;</code></td>
+                                <td>Define a propriedades de estilos que podem ser: <code>normal</code>>, <code>italic</code>> ou <code>oblique</code>>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td><code>font-weight</code></td>
+                                <td><code>font-weight: bold;</code></td>
+                                <td>Define a propriedade de intensidade de uma fonte na sequência de valores de ‘100’ a ‘900’, cada número indica uma fonte mais intensa (escura) que o valor anterior.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td><code>font-size</code></td>
+                                <td><code>font-size: 12px;</code></td>
+                                <td>Define o tamanho da fonte.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td><code>letter-spacing</code></td>
+                                <td><code>letter-spacing: 5px;</code></td>
+                                <td>Controla o espaçamento entre as letras de um texto.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td><code>word-spacing;</code></td>
+                                <td><code>word-spacing: 10px;</code></td>
+                                <td>Controla o espaçamento entre as palavras de um texto.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td><code>line-height</code></td>
+                                <td><code>line-height: 25px;</code></td>
+                                <td>Controla a altura entre as linhas do texto de um paragrafo.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td><code>text-align</code></td>
+                                <td><code>text-align: center;</code></td>
+                                <td>Controla o posicionamento horizontal do conteúdo de um elemento. Os valores possíveis são: <code>left</code>>, <code>right</code>>, <code>center</code>> e <code>justify</code>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td><code>text-decoration</code></td>
+                                <td><code>text-decoration: underline;</code></td>
+                                <td>Define um efeito decorativo no texto. Podendo entre eles ser: <code>none</code> (sem decoração); <code>underline</code> (sublinhado); <code>line-through</code>(linha cortando o texto); e <code>blink</code> (efeito piscante).
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">10</th>
+                                <td><code>text-transform</code></td>
+                                <td><code>text-transform: uppercase;</code></td>
+                                <td>Controla os efeitos de capitalização do texto. Com ela, podemos definir a caixa das letras (minúsculas e maiusculas). Os valores possíveis são: <code>capitalize</code>, <code>uppercase</code>, <code>lowercase</code> e <code>none</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">11</th>
+                                <td><code>text-indent</code></td>
+                                <td><code>text-indent: 20px;</code></td>
+                                <td>Define o tamanho da endentação para a primeira linha do texto contida em um bloco, ou seja, o deslocamento para a direita de um parágrafo.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">12</th>
+                                <td><code>color</code></td>
+                                <td><code>color: rgb(255,0,0);</code></td>
+                                <td>Define a cor do texto de um texto.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">13</th>
+                                <td><code>font</code></td>
+                                <td><code>font: normal small-caps bold 14px "Comic Sans MS", sans-serif;</code></td>
+                                <td>Propriedade para definir em um único local vários estilos para a fonte. A sintaxe geral para font: <code>[style] [variant] [weight] [size] [/line-height] [family]</code>. Nota: Os valores <code>size</code> e <code>family</code>                                    são obrigatórios. Os demais são facultativos (se você os omitir será adotado o valor default ou herdado do elemento pai).
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">14</th>
+                                <td><code>width</code></td>
+                                <td><code>width: 100px;</code></td>
+                                <td>Define o comprimento (largura) de um elemento.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">15</th>
+                                <td><code>height</code></td>
+                                <td><code>height: 50px;</code></td>
+                                <td>Define a altura de um elemento.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">16</th>
+                                <td><code>border</code></td>
+                                <td><code>border:1px solid #CCC;</code></td>
+                                <td>Define bordas para um elemento.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">17</th>
+                                <td><code>background</code></td>
+                                <td><code>background:url("images/fundo-topo.png") no-repeat;</code></td>
+                                <td>Define as propriedades relacionadas ao fundo de exibição.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">18</th>
+                                <td><code>margin</code></td>
+                                <td><code>margin: 15px;</code></td>
+                                <td>Controla as margens de um elemento. Se forem indicados quatro valores, eles dizem respeito, respectivamente, às margens superior, direita, inferior e esquerda. Se for fornecido apenas um valor, ele é aplicado às quatro
+                                    margens.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">19</th>
+                                <td><code>padding</code></td>
+                                <td><code>padding: 10px 5px 5px 10px;</code></td>
+                                <td>Controla os espaçamentos de um elementos. Se forem indicados quatro valores, eles dizem respeito, respectivamente, aos espaçamentos superior, direito, inferior e esquerdo. Se for fornecido apenas um valor, ele é aplicado
+                                    aos quatro espaçamentos.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">20</th>
+                                <td><code>float</code></td>
+                                <td><code>float: left;</code></td>
+                                <td>Esta regra faz com que o box seja retirado de sua posição no fluxo do documento e flutuado para a direita ou esquerda. O espaço original ocupado pelo box não será deixado livre, mas preenchido pelo elemento que segue no
+                                    fluxo do documento.
+                                </td>
                             </tr>
                         </tbody>
                     </table>
