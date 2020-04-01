@@ -5,15 +5,31 @@ main>.container {
 }
 
 
-/* Define em 80% o tamanho da fonte de códigos*/
-
-code {
-    font-size: 80%;
-}
-
-
 /* Justifica todos os textos das linhas das tabelas */
 
 td {
     text-align: justify;
+}
+
+
+/* Define em 90% o tamanho da fonte, e cor azul para links e códigos*/
+
+code,
+a {
+    color: blue;
+    font-size: 90%;
+}
+
+
+/* Define a cor do link da navbar como sendo branca */
+
+.nav-linke {
+    color: white;
+}
+
+
+/* Define a cor do link da navbar como sendo rgb(125, 125, 175) */
+
+.nav-linke:hover {
+    color: rgb(125, 125, 175);
 }

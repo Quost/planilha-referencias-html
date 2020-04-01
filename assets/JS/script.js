@@ -12,4 +12,39 @@ $(document).ready(function() {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
     });
+
+    $("#myInput3").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable3 tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+
+    $("#myInput4").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable4 tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+
+    $("#myInput5").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable5 tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+
+    $("#myInput6").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable6 tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+
+    $("#myInput7").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable7 tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
 });
