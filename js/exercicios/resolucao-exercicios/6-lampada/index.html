@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>5 - AER4</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="../../images/5.png" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/f9d01d2ff7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <a class="btnSupEsquerdo" onclick="voltar()"><i class="fas fa-arrow-left"></i> <span class="label">Menu</span></a>
+
+        <!-- Main -->
+        <section id="main">
+            <div class="container">
+                <h2>What Can JavaScript Do?</h2>
+
+                <p>JavaScript can change HTML attribute values.</p>
+
+                <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+                <button onclick="document.getElementById('myImage').src='../../../../img/pic_bulbon.gif'">Turn on the light</button>
+
+                <img id="myImage" src="../../../../img/pic_bulboff.gif" style="width:100px">
+
+                <button onclick="document.getElementById('myImage').src='../../../../img/pic_bulboff.gif'">Turn off the light</button>
+            </div>
+            <div class="container" id="hidden" hidden>
+                <form class="contact">
+                    <fieldset>
+                        <input placeholder="Promoção" type="text" id="promocao" tabindex="1" required disabled>
+                        <input placeholder="Preço do 3º Produto" type="text" id="3produto" tabindex="1" required disabled>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p align="center" style="color: aliceblue;">&copy; MQ. Todos os direitos reservados. Design: <a style="color: aliceblue;" href="http://quost.github.io">M2 Solutions</a>.</p>
+        </footer>
+
+    </div>
+    <div id="dropDownSelect1"></div>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
