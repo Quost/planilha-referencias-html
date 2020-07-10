@@ -4,6 +4,19 @@ td {
     text-align: justify;
 }
 
+.center {
+    text-align: center;
+}
+
+#myTable12 td,
+#myTable9 td {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+
 
 /* Define em 90% o tamanho da fonte, e cor azul para links e códigos*/
 
@@ -26,7 +39,9 @@ h3 {
 /* Cor das bordas da tabela */
 
 .table {
-    border-color: #0a1441
+    border-color: #0a1441;
+    /* text-align: left; */
+    /* table-layout: auto; */
 }
 
 
@@ -187,7 +202,7 @@ h5 {
 
 nav {
     background: none !important;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 nav li a {

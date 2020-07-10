@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>2 - AER4</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="../../images/2.png" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/f9d01d2ff7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <a class="btnSupEsquerdo" onclick="voltar()"><i class="fas fa-arrow-left"></i> <span class="label">Menu</span></a>
+
+        <!-- Main -->
+        <section id="main">
+            <div class="container">
+                <form class="contact" action="" method="post">
+                    <h3 align="center">Revenda de Veículos JS</h3>
+                    <h4 align="center">Calcula entrada de 50% e divide o restante em 12 parcelas</h4>
+                    <fieldset>
+                        <input placeholder="Veículo" type="text" id="veiculo" autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Preço em R$" id="preco" type="text">
+                    </fieldset>
+                    <fieldset align="center">
+                        <a align="center" name="submit" id="botao">Ver Promoção</a>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="container" id="hidden" hidden>
+                <form class="contact">
+                    <fieldset>
+                        <input style="font-weight: bold;" placeholder="Veículo" type="text" id="veic" tabindex="1" required disabled>
+                        <input style="font-weight: bold;" placeholder="Entrada" type="text" id="entrada" tabindex="1" required disabled>
+                        <input style="font-weight: bold;" placeholder="Parcelas" type="text" id="parcelas" tabindex="1" required disabled>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p align="center" style="color: aliceblue;">&copy; MQ. Todos os direitos reservados. Design: <a style="color: aliceblue;" href="http://quost.github.io">M2 Solutions</a>.</p>
+        </footer>
+
+    </div>
+    <div id="dropDownSelect1"></div>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

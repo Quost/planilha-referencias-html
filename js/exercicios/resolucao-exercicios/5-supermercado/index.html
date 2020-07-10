@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>5 - AER4</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="../../images/5.png" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/f9d01d2ff7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <a class="btnSupEsquerdo" onclick="voltar()"><i class="fas fa-arrow-left"></i> <span class="label">Menu</span></a>
+
+        <!-- Main -->
+        <section id="main">
+            <div class="container">
+                <form class="contact" action="" method="post">
+                    <h3 align="center">Supermercado JS</h3>
+                    <h4 align="center">Calcula desconto para compras de 3 un. de um produto</h4>
+                    <fieldset>
+                        <input placeholder="Produto" type="text" id="produto" autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Preço (R$)" id="preco" type="text">
+                    </fieldset>
+                    <fieldset align="center">
+                        <a align="center" name="submit" id="botao">Ver Promoção</a>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="container" id="hidden" hidden>
+                <form class="contact">
+                    <fieldset>
+                        <input placeholder="Promoção" type="text" id="promocao" tabindex="1" required disabled>
+                        <input placeholder="Preço do 3º Produto" type="text" id="3produto" tabindex="1" required disabled>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p align="center" style="color: aliceblue;">&copy; MQ. Todos os direitos reservados. Design: <a style="color: aliceblue;" href="http://quost.github.io">M2 Solutions</a>.</p>
+        </footer>
+
+    </div>
+    <div id="dropDownSelect1"></div>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

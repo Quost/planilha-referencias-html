@@ -1,4 +1,12 @@
+// Verifica se o documento está pronto
+
 $(document).ready(function() {
+
+    // Para cada tabela, existe um input, o qual será utilizado para
+    // realizar procuras pela tabela... Utilizando o evento "on keyup"
+    // ele transforma primeiramente tudo em letras minúsculas, para uma
+    // comparação utilizando a função "filter"
+
     $("#myInput").on("keyup", function() {
         var value = $(this).val().toLowerCase();
         $("#myTable tr").filter(function() {
@@ -69,8 +77,30 @@ $(document).ready(function() {
         });
     });
 
+    $("#myInput11").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable11 tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
 
+    $("#myInput12").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable12 tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
 });
+
+// Troca a lâmpada para ligado - altera src da imagem para o da lampada ligada
+function lampadaLigada() {
+
+}
+
+// Troca a lâmpada para desligado - altera src da imagem para o da lampada desligada
+function lampadaDesligada() {
+
+}
 
 $(function() {
     var str = '#len'; //increment by 1 up to 1-nelemnts
