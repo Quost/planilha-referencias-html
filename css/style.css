@@ -36,6 +36,18 @@ h3 {
 }
 
 
+/* Adiciona transição na barra de pesquisa das tabelas */
+
+.pesquisa {
+    width: 200px;
+    transition: width 1s ease-in-out;
+}
+
+.pesquisa:focus {
+    width: 100%;
+}
+
+
 /* Cor das bordas da tabela */
 
 .table {
