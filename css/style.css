@@ -78,7 +78,7 @@ header,
 }
 
 
-/* Responsividade (consultei, não sei mecher com isso ainda) */
+/* Responsividade (consultei, não sei mexer com isso ainda) */
 
 @media (max-width: 740px) {
     html,
@@ -226,12 +226,12 @@ nav li a {
 
 #banner {
     position: absolute;
-    top: 150px;
-    left: 350px;
+    top: 40px;
+    left: 30%;
     float: left;
-    width: 180px;
+    width: 500px;
     /* largura */
-    height: 180px;
+    height: 60px;
     /* altura */
     background-color: #0066CC;
     /* cor de fundo */
@@ -269,4 +269,17 @@ p.link {
     background-color: #000000;
     color: #FFFFFF;
     text-align: center;
+}
+
+
+/* Preloader */
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../img/Loading-page.gif) center no-repeat rgb(0, 0, 0);
 }

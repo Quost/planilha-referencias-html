@@ -117,6 +117,7 @@ $(function() {
     });
 });
 
+// Funções para implementação da caixa de comentários
 $(function() {
     var saveComment = function(data) {
 
@@ -194,6 +195,7 @@ $(".fechar").click(function(event) {
 // funcao que fechará o banner
 function fechar() {
     $("#banner").hide();
+    $(".se-pre-con").fadeOut("slow");
 }
 
 // funcao para contagem

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' href='../../img/OFFbulb.jpg' type='image/x-icon'>
+    <title>Lâmpada JS</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+    }
+    /* Define Largura em 100% */
+    
+    html,
+    body,
+    header,
+    #view {
+        height: 100%;
+    }
+    /* Responsividade (consultei, não sei mexer com isso ainda) */
+    
+    @media (max-width: 740px) {
+        html,
+        body,
+        header,
+        #view {
+            height: 100vh;
+        }
+    }
+    
+    @import url(https://fonts.googleapis.com/css?family=Dosis);
+    .button {
+        font-size: 20px;
+        border: none;
+        background-color: #ebebf0;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+        user-select: none;
+        position: relative;
+        z-index: 1;
+        padding: 0;
+    }
+    
+    .button:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 10px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 10, 50, 0.2);
+        transition: transform 0.6s cubic-bezier(0, 0.9, 0.13, 0.9);
+        transform: translate3D(0, 0, 0);
+    }
+    
+    .button:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ebebf0;
+        z-index: -1;
+    }
+    
+    .button:hover:before,
+    .button:focus:before {
+        transform: translate3D(10px, 0, 0);
+    }
+    
+    .button:active:before {
+        transform: translate3D(0, 0, 0);
+    }
+    
+    .button:focus,
+    .button:active {
+        outline: none;
+    }
+    
+    .button .button__inner {
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: #333;
+        padding: 1em 1.5em;
+        background-color: #fbfbfb;
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s cubic-bezier(0, 0.9, 0.13, 0.9);
+        position: relative;
+    }
+    
+    .button:hover .button__inner,
+    .button:focus .button__inner {
+        transform: translate3D(0, -10px, 0);
+    }
+    
+    .button:active .button__inner {
+        transform: translate3D(0, 0, 0);
+    }
+    
+    .button:hover .button__inner,
+    .button:focus .button__inner {
+        background-color: #fff;
+    }
+    
+    .button--secondary {
+        background-color: #00d18e;
+        z-index: 0;
+    }
+    
+    .button--secondary:after {
+        background-color: #00d18e;
+    }
+    
+    .button--secondary .button__inner {
+        background-color: #00ffb2;
+    }
+    
+    .button--secondary:hover .button__inner,
+    .button--secondary:focus .button__inner {
+        background-color: #11ffb3;
+    }
+</style>
+
+<body>
+    <div id='view' style="justify-content:center;align-items:center; background-image: url('../../img/bg1.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        <div>
+            <br>
+            <h2 id="h" align='center' style="background-color: rgba(0, 0, 0, 0.774); width: 700px; margin: 0 auto; text-emphasis: bold; color: white;">O que o JavaScript pode fazer? Acenda e apague a lâmpada.</h2><br>
+            <div align='center' style="margin-top: 100px ;">
+                <button onclick="turnOn()">Turn on the light</button>
+                <img id="img" src="../../img/pic_bulboff.gif">
+                <button onclick="turnOff()">Turn off the light</button>
+            </div>
+            <div style="display:flex;justify-content:center;align-items:center; margin-top: 200px;" action="../../index.html">
+                <button onclick="window.location.href='../../index.html';" class=" button button--secondary "><span class="button__inner ">Voltar para Página Inicial</span></button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var loader = setInterval(function() {
+            if (document.readyState !== "complete") return;
+            clearInterval(loader);
+            turnOff();
+        }, 300);
+
+        function turnOn() {
+            document.getElementById('view').style.backgroundImage = "url('../../img/bg2.jpg')";
+            // document.getElementById('h').style.color = "black";
+            document.getElementById('img').src = '../../img/pic_bulbon.gif';
+        }
+
+        function turnOff() {
+            document.getElementById('view').style.backgroundImage = "url('../../img/bg1.jpg')";
+            // document.getElementById('h').style.color = "white";
+            document.getElementById('img').src = '../../img/pic_bulboff.gif';
+        }
+    </script>
+
+</body>
+
+
+
+</html>
