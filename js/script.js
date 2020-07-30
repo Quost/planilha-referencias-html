@@ -1,3 +1,6 @@
+import commentBox from 'commentbox.io'; // also available on CDN
+commentBox('5642498839937024-proj');
+
 // Verifica se o documento está pronto
 
 $(document).ready(function() {
