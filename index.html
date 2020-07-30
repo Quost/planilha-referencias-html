@@ -111,16 +111,12 @@
                                 <a class='dropdown-item' href='#15'>Operadores</a>
                                 <a class='dropdown-item' href='js/exercicios/index.html' target='_blank'>Exercícios Javascript</a>
                                 <a class='dropdown-item' href='https://quost.github.io/site-jogos' target='_blank'>Jogos Javascript</a>
+                                <a class='dropdown-item' href='js/calculadora/calculator.html' target='_blank'>Calculadora Javascript</a>
                             </div>
                         </li>
                     </ul>
                     <!-- Lista com os ícones das redes sociais -->
                     <ul class='navbar-nav nav-flex-icons ml-auto'>
-                        <li class='nav-item hoverable'>
-                            <a class='nav-link' href='contact-form/contact.html'>
-                                <i class='fas fa-address-book light-green-text-2'></i>
-                            </a>
-                        </li>
                         <li class='nav-item hoverable'>
                             <a class='nav-link' href='https://www.facebook.com/matheusquost' target='_blank'>
                                 <i class='fab fa-facebook-f light-green-text-2'></i>
@@ -2394,11 +2390,20 @@
                 <div class='col-md-12'>
                     <!-- Título -->
                     <h3 align='center'> Comentários (Beta Feature)</h3><br />
+
+                    <!-- Essa div se transformará em um form com um input e dois botões (Anexo e Enviar) -->
                     <div id="comments-container"></div>
+                    <!-- Referência: https://viima.github.io/jquery-comments/ -->
 
                 </div>
             </div>
         </div>
+        <div id="banner">
+            <div id="fechar"><a href="#" title="Fechar" class="fechar">X</a></div>
+            <p class="link"><a href="#">Olá, obrigado por sua visita!</a></p>
+            <p>Este banner sumirá em <span id="contador">3</span> segundos.</p>
+        </div>
+
     </main>
     <!-- Main -->
 

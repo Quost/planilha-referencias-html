@@ -179,3 +179,45 @@ $(function() {
         },
     });
 });
+
+var $conteudo = $('#conteudo').width(); // largura total	
+var $banner = $('#banner'); // objeto banner
+var $tempo = 3; // milisegundos
+var $intervalo;
+
+// evento click
+$(".fechar").click(function(event) {
+    event.preventDefault();
+    fechar(); // chamada a função
+});
+
+// funcao que fechará o banner
+function fechar() {
+    $("#banner").hide();
+}
+
+// funcao para contagem
+function contador() {
+    $intervalo = window.setInterval(function() {
+        var tempoContagem = $("#contador").html();
+        var atualizaContagem = eval(tempoContagem) - eval(1);
+        $("#contador").html(atualizaContagem);
+
+        // chegando em zero o contador é parado
+        if (atualizaContagem == 0) {
+            pararContagem();
+        }
+    }, 1000);
+}
+
+// funcao para limpar o contador 
+function pararContagem() {
+    window.clearInterval($intervalo);
+}
+
+// deslocamento do banner
+$banner.animate({ left: ($conteudo / 4) }, 900).show();
+// chamada da funcao que fará a contagem
+contador();
+// setando o tempo de execução do banner
+setTimeout(fechar, $tempo * 1000);
