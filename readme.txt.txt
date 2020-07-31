@@ -4,7 +4,7 @@ Estou escrevendo isto depois de ter finalizado o site, portanto posso estar esqu
 Outra ibservação: Alguns dos requisitos da Avaliação já haviam sidos contemplados na Avaliação 1, como por exemplo: 
    --- data automática em script no rodapé;
    --- filtro de pesquisa nas tabelas utilizando jquery;
-   --- animação css em botões, utilizando o efeito hover; 
+   --- animação css em botões, utilizando o efeito de transições (hover); 
 
 -> Smooth Scroll: adicionado no arquivo css/style.css
    --- Permite que ao navegar entre seções da página, o scroll seja suavizado;
@@ -24,6 +24,9 @@ Outra ibservação: Alguns dos requisitos da Avaliação já haviam sidos contem
 -> Preloader: implementado em (css/style.css) É um background que desaparecerá ao ser fechado o banner acima citado.
    --- (ja/script.js) está a parte do código que será responsável por fechar o gif de carregamento.
 
+-> Animação CSS adicionada ao Banner:
+   --- O banner durante os 3 segundos abertos trocará de cor.
+
 -> Exercícios AER 4: Foram agregados ao site, em (js/exercicios)
    --- Abrem separadamente o site desenvolvido para a atividade em questão (pensei em colocá-lo para dar volume ao site);
 
@@ -42,6 +45,10 @@ Ele se encontra disponível na seguinte URL: "https://quost.github.io/planilha-r
 
 Vou retirar algumas coisas que foram adicionadas nesta avaliação depois que eu enviá-la... Eu uso o git para publicar, bem como para versionar,
 Caso eu faça alguma coisa errada, ou até perca o código no computador, criei o hábito de comittar qualquer mudança.
+
+Algo que pretendo fazer é tornar meu site com a cor personalizável, porém não salve a cor em uma variável e teria muito trabalho para toda vez que precisasse alterar, trocar em tocos os lugares que as cores estão sendo chamadas...
+Acredito que a implementação de um colorpicker igual ao do plugin que utilizei que mudasse a cor toda do site seria muito bacana! Tentarei fazer quando sobrar um tempinho...
+Essa implementação da cor através da variável permitiria adicionar transição para alterar a cor do site a cada clique, ou a cada segundo por exemplo.
 
 Acredito que seria isto. Entrego aqui a Avaliação 2 de Des. Web. I.
 

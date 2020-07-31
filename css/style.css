@@ -229,6 +229,8 @@ nav li a {
     top: 40px;
     left: 30%;
     float: left;
+    animation-name: animacao;
+    animation-duration: 3s;
     width: 500px;
     /* largura */
     height: 60px;
@@ -245,6 +247,24 @@ nav li a {
     /* posicionando sobre os demais */
     display: none;
     color: #FFFFFF;
+}
+
+@keyframes animacao {
+    0% {
+        background-color: #0066CC;
+    }
+    25% {
+        background-color: #0f365c;
+    }
+    50% {
+        background-color: #00cc7e;
+    }
+    75% {
+        background-color: #2a777e;
+    }
+    100% {
+        background-color: #1f00cc;
+    }
 }
 
 #banner a {
