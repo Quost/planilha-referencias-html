@@ -37,3 +37,16 @@ Eu achei interessante colocá-lo neste trabalho, assim como a AER4 por ser perti
 
 -> Adicionei alguns recursos CSS em alguns botões, como por exemplo nos arquivos da lampada e da calculadora, um botão bastante estilizado;
 
+Por ser um site estático ainda, estamos utilizando apenas HTML, CSS e JS, eu consigo publicar o mesmo através do Github...
+Ele se encontra disponível na seguinte URL: "https://quost.github.io/planilha-referencias-html-css-js/"
+
+Vou retirar algumas coisas que foram adicionadas nesta avaliação depois que eu enviá-la... Eu uso o git para publicar, bem como para versionar,
+Caso eu faça alguma coisa errada, ou até perca o código no computador, criei o hábito de comittar qualquer mudança.
+
+Acredito que seria isto. Entrego aqui a Avaliação 2 de Des. Web. I.
+
+31 de julho de 2020.
+
+Abraços, 
+Atenciosamente,
+Matheus Quost.
