@@ -67,14 +67,14 @@ footer div {
 
 /* Abaixo, série de configurações para tornar a primeira página com imagem em tela cheia */
 
-
-/* Define Largura em 100% */
-
 html,
 body,
 header,
 .view {
+    /* Define Largura em 100% */
     height: 100%;
+    /* Torna o scroll quando navegado na página mais "leve" */
+    scroll-behavior: smooth;
 }
 
 

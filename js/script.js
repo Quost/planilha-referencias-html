@@ -92,16 +92,6 @@ $(document).ready(function() {
     });
 });
 
-// Troca a lâmpada para ligado - altera src da imagem para o da lampada ligada
-function lampadaLigada() {
-
-}
-
-// Troca a lâmpada para desligado - altera src da imagem para o da lampada desligada
-function lampadaDesligada() {
-
-}
-
 $(function() {
     var str = '#len'; //increment by 1 up to 1-nelemnts
     $(document).ready(function() {
@@ -195,6 +185,7 @@ $(".fechar").click(function(event) {
 // funcao que fechará o banner
 function fechar() {
     $("#banner").hide();
+    // Ao fechar o banner, fechará também o preloader
     $(".se-pre-con").fadeOut("slow");
 }
 

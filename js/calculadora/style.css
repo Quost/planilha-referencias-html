@@ -1,3 +1,9 @@
+html,
+main,
+footer {
+    scroll-behavior: smooth;
+}
+
 .calc {
     position: absolute;
     background-color: #DCDCDC;
